@@ -1,0 +1,288 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #18192d; /* Set text color to dark blue */
+    background-color: #f7f7f7; /* Set background color to 70% white (#f7f7f7) */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #18192d; /* Set background color of the navbar to 70% white (#f7f7f7) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-logo img {
+    width: 80px; /* Adjust the width as per your logo */
+    height: auto;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 1rem;
+}
+
+.navbar-links a {
+    color: #a0a2c2; /* Set link color to dark blue */
+    text-decoration: none;
+}
+
+/* Big Header Section */
+.header {
+    position: relative;
+    color: #d5d7eb; /* Set text color to dark blue */
+}
+
+.header-image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a0a2c2;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 40px 0;
+    color: #18192d; /* Set text color to dark blue */
+    background-color: #adbceddb; /* Set background color to 70% white (#f7f7f7) */
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content {
+    width: 100%;
+    padding: 0 35px 0;
+}
+
+.about-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.45;
+    margin-bottom: 15px;
+}
+
+.about-content blockquote {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Services Section */
+.services-section {
+    font-size: 24px;
+    padding: 30px 3px 50px;
+    color: #18192d; /* Set text color to dark blue */
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px   ;
+}
+
+.service {
+    background-color: #18192d; /* Set background color of service cards to white */
+    color: azure;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to service cards */
+}
+
+.service img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 25px;
+}
+
+.service p {
+    font-size: 16px;   
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 20px 8px 50px;
+    font-size: 24px;
+    color: #edeef5; /* Set text color to dark blue */
+    background-color:#18192d;; /* Set background color to 70% white (#f7f7f7) */
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: #18192d; /* Set background color of testimonials grid to white */
+}
+
+.testimonial {
+    background-color: #676789e3; /* Set background color of testimonial cards to white */
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(24, 25, 45, 0.1); /* Add a subtle shadow to testimonial cards */
+    transition: transform 0.2s ease; /* Add a smooth transition effect on hover */
+    text-align: center;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
+.testimonial blockquote {
+    position: relative;
+    font-size: 20px;
+}
+
+.testimonial blockquote i {
+    font-size: 14px;
+    position: absolute;
+    color: #18192d00; /* Set the color of the quote icons to dark blue */
+}
+
+.testimonial blockquote i.fa-quote-left {
+    top: 0;
+    left: 0;
+}
+
+.testimonial blockquote i.fa-quote-right {
+    bottom: 0;
+    right: 0;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.testimonial strong {
+    font-size: 20px;
+}
+
+/* Our Team Section */
+.team-section {
+    font-size: 24px;
+    padding: 25px 8px 50px;
+    background-color: #18192d50;
+    color: #18192d; /* Set text color to dark blue */
+}
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.team-members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #110e657c; /* Set background color of team member cards to white */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(24, 25, 45, 0.1); /* Add a subtle shadow to team member cards */
+    transition: transform 0.2s ease; /* Add a smooth transition effect on hover */
+}
+
+.team-member:hover {
+    transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+    font-size: 24px;
+    padding: 20px    0;
+    color: #f7f7f7; /* Set text color to dark blue */
+    background-color: #18192d; /* Set background color to 70% white (#f7f7f7) */
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 0.5rem;
+}
+
+/* Common Footer */
+.footer {
+    background-color: #18192d; /* Set background color of footer to 70% white (#f7f7f7) */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center;
+    padding: 1rem;
+    color: #f7f7f7; /* Set text color to dark blue */
+}
+
+.footer p {
+    margin: 0;
+}
